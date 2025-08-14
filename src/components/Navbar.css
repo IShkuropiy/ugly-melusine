@@ -1,0 +1,27 @@
+.navbar {
+  padding: 1rem 0;
+  position: relative;
+  z-index: 2;
+  background-color: #131314;
+  color: #C6011F;
+}
+.navbar .navlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.navLink{
+  text-decoration: none;
+  color: #C6011F;
+  font-size: 1.6rem;
+  letter-spacing: 0.12rem;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  text-decoration: none;
+  color: #fff;
+}
