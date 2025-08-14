@@ -3,8 +3,70 @@ import { NavLink } from "react-router-dom";
 import { NAV } from './navData';
 import './Navbar.css';
 
-
 export default function Navbar() {
+    // which submenu is open on mobile
+    const [openKey, setOpenKey] = useState(null);
+    const toggle = (i) => setOpenKey(k => (k === i ? null : i));
+
+    const linkCls = ({ isActive }) => (isActive ? 'navLink active' : 'navLink');
+
+    return (
+        <nav className="navbar" aria-label="Main">
+            <ul className="navlist" role="menubar">
+                {NAV.map((item, i) => {
+                    const hasChildren = Array.isArray(item.children) && item.children.length > 0;
+                    const isOpen = openKey === i;
+
+                    return (
+                        <li
+                            key={item.label}
+                            className={`navitem ${hasChildren ? 'has-children' : ''}`}
+                            role="none"
+                            data-open={isOpen ? 'true' : 'false'}
+                        >
+                            {/* top-level link */}
+                            <NavLink to={item.to} className={linkCls} role="menuitem">
+                                {item.label}
+                            </NavLink>
+
+                            {/* mobile toggle button appears only on small screens via CSS */}
+                            {hasChildren && (
+                                <>
+                                    <button
+                                        className="submenu-toggle"
+                                        aria-expanded={isOpen}
+                                        aria-controls={`submenu-${i}`}
+                                        onClick={() => toggle(i)}
+                                        title={`Toggle ${item.label}`}
+                                    >
+                                        ▾
+                                    </button>
+
+                                    {/* submenu */}
+                                    <ul
+                                        id={`submenu-${i}`}
+                                        className="submenu"
+                                        role="menu"
+                                        aria-label={`${item.label} submenu`}
+                                    >
+                                        {item.children.map((child) => (
+                                            <li key={child.label} role="none">
+                                                <NavLink to={child.to} className={linkCls} role="menuitem">
+                                                    {child.label}
+                                                </NavLink>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </>
+                            )}
+                        </li>
+                    );
+                })}
+            </ul>
+        </nav>
+    );
+}
+/*export default function Navbar() {
     return (
         <nav className="navbar">
 
