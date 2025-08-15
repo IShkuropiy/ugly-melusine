@@ -1,11 +1,11 @@
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
-import Navbar from './pages/Navbar'
+import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Epoques from './pages/Epoques'
 import Genres from './pages/Genres'
 import Gallery from './pages/Gallery'
-
+import Children from './pages/Children'
 
 
 export default function App() {
@@ -18,6 +18,7 @@ export default function App() {
         <Route path="/epoques" element={<Epoques />} />
         <Route path="/genres" element={<Genres />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/children" element={<Children />} />
       </Routes>
     </div>
 

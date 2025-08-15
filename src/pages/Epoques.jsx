@@ -1,6 +1,6 @@
 export default function Epoques() {
 
     return (
-        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, placeat.</h1>
+        <h1> sit amet consectetur adipisicing elit. Quidem, placeat.</h1>
     )
 }
