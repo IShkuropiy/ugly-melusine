@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
-import Navbar from './pages/Navbar'
+import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Epoques from './pages/Epoques'
 import Genres from './pages/Genres'
@@ -12,7 +12,7 @@ export default function App() {
   return (
 
     <div>
-       <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/epoques" element={<Epoques />} />
