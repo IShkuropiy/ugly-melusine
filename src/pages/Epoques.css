@@ -1,0 +1,36 @@
+
+.epoques-content {
+    font-family: 'Poppins', sans-serif;
+}
+.epoques-hero {
+  background-image: url("../assets/laMeninas.jpg"); 
+  background-size: cover;       
+  background-position: center;
+  width: 100%;
+  height: 400px;                
+  display: flex;               
+  justify-content: center;      
+  align-items: center;          
+}          
+
+.epoques-hero-overlay {
+  text-align: center;                 
+  padding: 1rem 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.epoques-hero h1 {
+  color: #fff;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.epoques-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: left;
+}

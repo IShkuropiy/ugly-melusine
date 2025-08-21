@@ -1,0 +1,24 @@
+.baroque-hero {
+  background-image: url("family.jpg"); 
+  background-size: cover;       
+  background-position: center; 
+  height: 400px;              
+  display: flex;            
+  justify-content: center;  
+  align-items: center;
+  text-align: center;
+  color: white;    
+  padding: 0 1rem; 
+}
+
+.baroque-hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.baroque-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: left;
+}
