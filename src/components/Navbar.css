@@ -57,6 +57,7 @@
 }
 
 .submenu li a:hover {
-  background-color: #ddd;
+  /*background-color: #ddd;*/
+  color: #C6011F;
 
 }

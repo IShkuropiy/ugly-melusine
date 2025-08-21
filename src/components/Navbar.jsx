@@ -24,7 +24,7 @@ export default function Navbar() {
                             <li><Link to="/epoques/baroque">Baroque</Link></li>
                             <li><Link to="/epoques/vienna">Vienna Classics</Link></li>
                             <li><Link to="/epoques/romantics">Romantics</Link></li>
-                            <li><Link to="/epoques/category2">Category 2</Link></li>
+                            <li><Link to="/epoques/modern">Modern</Link></li>
                         </ul>
                     )}
                 </li>
