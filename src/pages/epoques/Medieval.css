@@ -3,15 +3,14 @@
     font-family: 'Poppins', sans-serif;
 }
 .epoques-hero {
-  background-image: url("../assets/laMeninas.jpg"); 
+  background-image: url("../assets/medieval.jpg"); 
   background-size: cover;       
   background-position: center;
   width: 100%;
   height: 400px;                
   display: flex;               
   justify-content: center;      
-  align-items: center;   
-        
+  align-items: center;          
 }          
 
 .epoques-hero-overlay {
@@ -19,7 +18,7 @@
   padding: 1rem 2rem;
   font-size: 2.5rem;
   font-weight: bold;
-  /*background: rgba(0, 0, 0, 0.4);*/
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .epoques-hero h1 {
