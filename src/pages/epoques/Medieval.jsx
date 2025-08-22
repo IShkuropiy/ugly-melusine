@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+//import { Link } from 'react-router-dom';
 //import { NavLink } from "react-router-dom";
-import './Epoques.css';
-// import './epoques/Baroque'
-import '../assets/laMeninas.jpg'
+import './Medieval.css';
 
-export default function Epoques() {
+export default function Medieval() {
 
-    return (
+return (
         <div className="e-content">
             <div className="epoques-hero">
                 <div className="epoques-hero-overlay">
-                    <h1> Music Guide</h1>
+                    <h1>Baroque Era Music Guide</h1>
                 </div>
             </div>
 
@@ -24,7 +22,5 @@ export default function Epoques() {
             </div>
 
         </div>
-
-
-    )
+    );
 }
