@@ -1,7 +1,7 @@
-.epoques-content {
+.v-container {
     font-family: 'Poppins', sans-serif;
 }
-.epoques-hero {
+.v-hero {
   background-image: url("../assets/laMeninas.jpg"); 
   background-size: cover;       
   background-position: center;
@@ -13,7 +13,7 @@
         
 }          
 
-.epoques-hero-overlay {
+.v-hero-overlay {
   text-align: center;                 
   padding: 1rem 2rem;
   font-size: 2.5rem;
@@ -21,14 +21,14 @@
   /*background: rgba(0, 0, 0, 0.4);*/
 }
 
-.epoques-hero h1 {
+.v-hero h1 {
   color: #fff;
   text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
   font-size: 2.5rem;
   margin: 0;
 }
 
-.epoques-content {
+.v-content {
   max-width: 800px;
   margin: 2rem auto;
   padding: 0 1rem;
